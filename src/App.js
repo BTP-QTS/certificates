@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import * as React from "react";
+import { Routes, Route, Link } from "react-router-dom";
+
+import Certi_of_Origin from "./components/Certi_of_Origin";
+import Phytosanitary from "./components/Phytosanitary";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{margin:"20px",padding:"20px"}}>
+     
+      
+      <Routes>
+        <Route path="/" element={<Certi_of_Origin/>} />
+        <Route path="phyto" element={<Phytosanitary/>} />
+      </Routes>
     </div>
   );
 }
 
-export default App;
+export default App
