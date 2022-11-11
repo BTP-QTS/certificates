@@ -225,27 +225,27 @@ of packages"
           </Item>
         </Grid>
         <Grid item xs={6}>
-        <Item>Place of issue and code</Item>
-        <Item>
-          <TextField label="Place of issue" id="fullWidth" />
-          <TextField label="Code" id="fullWidth" />
-        </Item>
-      </Grid>
-      <Grid item xs={6}>
-          <Item>Date of issue</Item>
+          <Item>Place of issue and code</Item>
           <Item>
-            <TextField
-              id="fullWidth"
-              label="Date of issue"
-              fullWidth
-            />
+            <TextField label="Place of issue" id="fullWidth" />
+            <TextField label="Code" id="fullWidth" />
           </Item>
         </Grid>
+        <Grid item xs={6}>
+          <Item>Date of issue</Item>
+          <Item>
+            <TextField id="fullWidth" label="Date of issue" fullWidth />
+          </Item>
+        </Grid>
+        
       </Grid>
-      
-      
+                
+<Button variant="contained" component="label" fullWidth>
+  Submit
+</Button>
     </Box>
   );
 }
 
 export default Phytosanitary;
+
